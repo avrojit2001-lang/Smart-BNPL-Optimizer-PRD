@@ -1,4 +1,5 @@
 📄 Smart BNPL Optimizer: Product Requirements Document
+
 🚀 Vision
 To transform digital credit from a source of anxiety into a tool for financial empowerment by providing users with an AI-driven co-pilot that aggregates, predicts, and optimizes micro-repayments.
 
@@ -34,6 +35,7 @@ Business Impact: Increase in on-time repayment rates and improved customer Lifet
 
 ⚙️ System Architecture
 Code snippet
+    ```mermaid
 graph TD
     A[User Opens App] --> B{BNPL Aggregator API}
     B --> C[Fetch BNPL Balance 1]
@@ -42,7 +44,10 @@ graph TD
     D --> E
     E --> F[AI Cash-Flow Prediction Engine]
     F -->|Predicts low balance near due date| G[Alert: High Risk of Late Fee]
-    F -->|Predicts stable balance| H[Suggest Gamified Micro-Installments]
+    F -->|Predicts stable balance| H[Suggest Gamified Micro-Installments]```
+    
     G --> I[User Adjusts Spending]
     H --> I[User Approves Auto-Pay Schedule]
     I --> J((Improved Credit Health))
+    F -->|Predicts stable balance| H[Suggest Gamified Micro-Installments]
+    G --> I[User Adjus    I --> J((Improved Credit Health))
