@@ -1,4 +1,4 @@
-# Smart-BNPL-Optimizer-PRD
+📄 Smart BNPL Optimizer: Product Requirements Document
 🚀 Vision
 To transform digital credit from a source of anxiety into a tool for financial empowerment by providing users with an AI-driven co-pilot that aggregates, predicts, and optimizes micro-repayments.
 
@@ -31,3 +31,18 @@ North Star Metric: Decrease in the percentage of users incurring late fees withi
 Engagement: Weekly Active Users (WAU) interacting with the cash-flow prediction dashboard.
 
 Business Impact: Increase in on-time repayment rates and improved customer Lifetime Value (LTV).
+
+⚙️ System Architecture
+Code snippet
+graph TD
+    A[User Opens App] --> B{BNPL Aggregator API}
+    B --> C[Fetch BNPL Balance 1]
+    B --> D[Fetch BNPL Balance 2]
+    C --> E[Total Liability Calculated]
+    D --> E
+    E --> F[AI Cash-Flow Prediction Engine]
+    F -->|Predicts low balance near due date| G[Alert: High Risk of Late Fee]
+    F -->|Predicts stable balance| H[Suggest Gamified Micro-Installments]
+    G --> I[User Adjusts Spending]
+    H --> I[User Approves Auto-Pay Schedule]
+    I --> J((Improved Credit Health))
